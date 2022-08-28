@@ -20,7 +20,11 @@ class HomeScreen extends StatelessWidget {
       body: ListView.separated(
         itemCount: AppRoutes.menuOptions.length,
         itemBuilder: (context, index) => ListTile(
-          leading: Icon(AppRoutes.menuOptions[index].icon, color: AppTheme.primary,),
+          leading: Icon(
+            AppRoutes.menuOptions[index].icon, 
+            color: AppTheme.primary,
+            size: 35,
+          ),
           title: Text(
             AppRoutes.menuOptions[index].name,
             style: const TextStyle(fontSize: 30),
