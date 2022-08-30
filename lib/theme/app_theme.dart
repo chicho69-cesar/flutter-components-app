@@ -33,7 +33,38 @@ class AppTheme {
         elevation: 10,
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 45),
       )
-    )
+    ),
+
+    inputDecorationTheme: const InputDecorationTheme(
+      floatingLabelStyle: TextStyle(
+        color: primary,
+        fontSize: 18,
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          color: primary
+        ),
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(10),
+          bottomLeft: Radius.circular(10)
+        ),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          color: primary
+        ),
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(10),
+          bottomLeft: Radius.circular(10)
+        ),
+      ),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(10),
+          bottomLeft: Radius.circular(10)
+        )
+      ),
+    ),
   );
 
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
