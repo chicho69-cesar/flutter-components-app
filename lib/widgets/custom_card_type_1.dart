@@ -16,15 +16,15 @@ class CustomCardTypeOne extends StatelessWidget {
             leading: Icon(
               Icons.photo_album_outlined, 
               color: AppTheme.primary,
-              size: 30,
+              size: 20,
             ),
             title: Text(
               'Soy un titulo',
-              style: TextStyle(fontSize: 30),
+              style: TextStyle(fontSize: 20),
             ),
             subtitle: Text(
               'Sint minim nisi ullamco est exercitation culpa. Nisi qui esse ipsum laboris. Aliqua culpa laboris dolore eiusmod dolor velit velit ea in velit veniam.',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 16),
             ),
           ),
 
@@ -37,14 +37,14 @@ class CustomCardTypeOne extends StatelessWidget {
                   onPressed: () { },
                   child: const Text(
                     'Cancel',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
                 TextButton(
                   onPressed: () { }, 
                   child: const Text(
                     'Ok',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
               ],

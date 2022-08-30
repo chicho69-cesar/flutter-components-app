@@ -10,7 +10,8 @@ class Listview1Screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child: Text('Listview Tipo 1', style: TextStyle(fontSize: 35))
+          child: Text('Listview Tipo 1', 
+          style: TextStyle(fontSize: 25))
         ),
       ),
       body: ListView(
@@ -19,15 +20,15 @@ class Listview1Screen extends StatelessWidget {
             return ListTile(
               leading: const Icon(
                 Icons.emergency,
-                size: 30,
+                size: 20,
               ),
               title: Text(
                 game, 
-                style: const TextStyle(fontSize: 30)
+                style: const TextStyle(fontSize: 20)
               ),
               trailing: const Icon(
                 Icons.arrow_forward_ios_outlined,
-                size: 30,
+                size: 20,
               ),
             );
           }).toList()

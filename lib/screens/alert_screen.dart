@@ -18,7 +18,7 @@ class AlertScreen extends StatelessWidget {
           ),
           title: const Text(
             'Titulo de la alerta',
-            style: TextStyle(fontSize: 30),
+            style: TextStyle(fontSize: 25),
           ),
           content: Column(
             mainAxisSize: MainAxisSize.min, // determinamos el alto maximo de una columna
@@ -60,7 +60,7 @@ class AlertScreen extends StatelessWidget {
         return CupertinoAlertDialog(
           title: const Text(
             'Titulo de la alerta',
-            style: TextStyle(fontSize: 30),
+            style: TextStyle(fontSize: 25),
           ),
           content: Column(
             children: const [
@@ -100,7 +100,7 @@ class AlertScreen extends StatelessWidget {
         title: const Center(
           child: Text(
             'Alerts Widget',
-            style: TextStyle(fontSize: 35),
+            style: TextStyle(fontSize: 25),
           ),
         ),
       ),
@@ -120,7 +120,7 @@ class AlertScreen extends StatelessWidget {
             padding: EdgeInsets.all(5.0),
             child: Text(
               'Mostrar alerta',
-              style: TextStyle(fontSize: 25),
+              style: TextStyle(fontSize: 18),
             ),
           ),
         ),

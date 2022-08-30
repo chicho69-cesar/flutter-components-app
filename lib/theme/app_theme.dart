@@ -12,7 +12,7 @@ class AppTheme {
       color: primary, 
       elevation: 0,
       iconTheme: IconThemeData(
-        size: 35,
+        size: 25,
         color: Colors.white
       )
     ),

@@ -40,7 +40,7 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
         title: const Center(
           child: Text(
             'Animated Container',
-            style: TextStyle(fontSize: 35),
+            style: TextStyle(fontSize: 25),
           ),
         ),
       ),

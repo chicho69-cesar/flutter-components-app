@@ -15,16 +15,18 @@ class Listview2Screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child: Text('Listview Tipo 2', style: TextStyle(fontSize: 35))
+          child: Text('Listview Tipo 2', 
+          style: TextStyle(fontSize: 25))
         ),
       ),
       body: ListView.separated(
         itemCount: options.length,
         itemBuilder: (context, index) => ListTile(
-          title: Text(options[index], style: const TextStyle(fontSize: 30)),
+          title: Text(options[index], 
+          style: const TextStyle(fontSize: 20)),
           trailing: const Icon(
             Icons.arrow_forward_ios_outlined,
-            size: 30,
+            size: 20,
             color: Colors.indigo,
           ),
           onTap: () {

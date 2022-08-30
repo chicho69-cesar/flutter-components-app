@@ -46,7 +46,7 @@ class CustomCardTypeTwo extends StatelessWidget {
               padding: const EdgeInsets.only(right: 20, top: 20, bottom: 20),
               child: Text(
                 name!,
-                style: const TextStyle(fontSize: 25),
+                style: const TextStyle(fontSize: 18),
               ),
             )
         ],

@@ -9,7 +9,7 @@ class AvatarScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'Stan Lee',
-          style: TextStyle(fontSize: 35),
+          style: TextStyle(fontSize: 25),
         ),
         actions: [
           Container(
@@ -19,7 +19,7 @@ class AvatarScreen extends StatelessWidget {
               backgroundImage: const NetworkImage('https://media.wired.com/photos/5be9d68a5d7c6a7b81d79e25/master/pass/StanLee-610719480.jpg'),
               child: const Text(
                 'SL',
-                style: TextStyle(fontSize: 25),
+                style: TextStyle(fontSize: 18),
               ),
             ),
           ),

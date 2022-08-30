@@ -14,7 +14,8 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child: Text('Componentes en Flutter', style: TextStyle(fontSize: 35)),
+          child: Text('Componentes en Flutter', 
+          style: TextStyle(fontSize: 25)),
         ),
       ),
       body: ListView.separated(
@@ -23,11 +24,11 @@ class HomeScreen extends StatelessWidget {
           leading: Icon(
             AppRoutes.menuOptions[index].icon, 
             color: AppTheme.primary,
-            size: 35,
+            size: 25,
           ),
           title: Text(
             AppRoutes.menuOptions[index].name,
-            style: const TextStyle(fontSize: 30),
+            style: const TextStyle(fontSize: 20),
           ),
           onTap: () {
             /* final route = MaterialPageRoute(

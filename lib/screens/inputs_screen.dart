@@ -10,7 +10,7 @@ class InputsScreen extends StatelessWidget {
         title: const Center(
           child: Text(
             'Inputs y Forms',
-            style: TextStyle(fontSize: 35),
+            style: TextStyle(fontSize: 25),
           ),
         ),
       ),
@@ -23,7 +23,7 @@ class InputsScreen extends StatelessWidget {
                 autofocus: true,
                 initialValue: 'Cesar Villalobos Olmos',
                 textCapitalization: TextCapitalization.words,
-                style: const TextStyle(fontSize: 25),
+                style: const TextStyle(fontSize: 18),
                 onChanged: (value) {
                   print('Value: $value');
                 },
