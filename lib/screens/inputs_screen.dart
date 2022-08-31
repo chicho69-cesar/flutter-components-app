@@ -35,7 +35,9 @@ class InputsScreen extends StatelessWidget {
             key: myFormKey, // Guardamos la key del formulario
             child: Column(
               children: [
-                const CustomInputField(
+                CustomInputField(
+                  formProperty: 'first_name',
+                  formValues: formValues,
                   hinText: 'Nombre...',
                   labelText: 'Nombre',
                   helperText: 'Nombre del usuario',
@@ -45,7 +47,9 @@ class InputsScreen extends StatelessWidget {
 
                 const SizedBox(height: 30),
 
-                const CustomInputField(
+                CustomInputField(
+                  formProperty: 'last_name',
+                  formValues: formValues,
                   hinText: 'Apellido...',
                   labelText: 'Apellido',
                   helperText: 'Apellido del usuario',
@@ -53,7 +57,9 @@ class InputsScreen extends StatelessWidget {
 
                 const SizedBox(height: 30),
 
-                const CustomInputField(
+                CustomInputField(
+                  formProperty: 'email',
+                  formValues: formValues,
                   hinText: 'Email...',
                   labelText: 'Email',
                   helperText: 'Email del usuario',
@@ -64,11 +70,27 @@ class InputsScreen extends StatelessWidget {
 
                 const SizedBox(height: 30),
                 
-                const CustomInputField(
+                CustomInputField(
+                  formProperty: 'password',
+                  formValues: formValues,
                   hinText: 'Password...',
                   labelText: 'Password',
                   helperText: 'Password del usuario',
                   obscureText: true,
+                ),
+
+                const SizedBox(height: 30),
+
+                DropdownButtonFormField<String>(
+                  items: const [
+                    DropdownMenuItem( value: 'Admin', child: Text('Admin', style: TextStyle(fontSize: 18))),
+                    DropdownMenuItem( value: 'Superuser', child: Text('Superuser', style: TextStyle(fontSize: 18))),
+                    DropdownMenuItem( value: 'Developer', child: Text('Developer', style: TextStyle(fontSize: 18))),
+                    DropdownMenuItem( value: 'Jr. Developer', child: Text('Jr. Developer', style: TextStyle(fontSize: 18))),
+                  ], 
+                  onChanged: ((value) {
+                    formValues['role'] = value ?? 'Jr. Developer';
+                  })
                 ),
 
                 const SizedBox(height: 30),

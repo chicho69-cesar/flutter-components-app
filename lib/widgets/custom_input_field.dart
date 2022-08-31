@@ -4,7 +4,8 @@ class CustomInputField extends StatelessWidget {
   const CustomInputField({
     Key? key, this.hinText, this.labelText, 
     this.helperText, this.icon, this.suffixIcon, 
-    this.textInputType, this.obscureText = false,
+    this.textInputType, this.obscureText = false, 
+    required this.formProperty, required this.formValues,
   }) : super(key: key);
 
   final String? hinText;
@@ -15,6 +16,9 @@ class CustomInputField extends StatelessWidget {
   final TextInputType? textInputType;
   final bool obscureText;
 
+  final String formProperty;
+  final Map<String, String> formValues;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -24,9 +28,7 @@ class CustomInputField extends StatelessWidget {
       keyboardType: textInputType,
       obscureText: obscureText,
       style: const TextStyle(fontSize: 18),
-      onChanged: (value) {
-        print('Value: $value');
-      },
+      onChanged: (value) => formValues[formProperty] = value,
       validator: (value) {
         if (value == null) return 'Este campo es requerido';
         return value.length < 3 ? 'Se requieren minimo 3 letras' : null;
