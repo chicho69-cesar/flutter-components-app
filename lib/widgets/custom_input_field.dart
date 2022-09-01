@@ -1,3 +1,4 @@
+import 'package:fl_components/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class CustomInputField extends StatelessWidget {
@@ -42,8 +43,14 @@ class CustomInputField extends StatelessWidget {
         /* prefixIcon: Icon(
           Icons.supervised_user_circle_outlined
         ), */
-        suffixIcon: suffixIcon == null ? null : Icon(suffixIcon),
-        icon: icon == null ? null : Icon(icon),
+        suffixIcon: suffixIcon == null ? null : Icon(
+          suffixIcon,
+          color: AppTheme.primary,
+        ),
+        icon: icon == null ? null : Icon(
+          icon,
+          color: AppTheme.primary,
+        ),
         /* focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: Colors.green,
