@@ -1,5 +1,6 @@
 import 'dart:math' show Random;
 
+import 'package:fl_components/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedScreen extends StatefulWidget {
@@ -14,7 +15,7 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
 
   double _width = 75;
   double _height = 75;
-  Color _color = Colors.indigo;
+  Color _color = AppTheme.primary;
   BorderRadiusGeometry _borderRadius = BorderRadius.circular(10);
 
   void changeShape() {

@@ -137,7 +137,7 @@ class _LoadingIcon extends StatelessWidget {
       height: 60,
       width: 60,
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.8),
+        color: Colors.black.withOpacity(0.8),
         shape: BoxShape.circle
       ),
       child: const CircularProgressIndicator(

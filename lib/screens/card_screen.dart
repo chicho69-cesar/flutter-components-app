@@ -10,8 +10,10 @@ class CardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-          child: Text('Card Widget', 
-          style: TextStyle(fontSize: 25)),
+          child: Text(
+            'Card Widget', 
+            style: TextStyle(fontSize: 25)
+          ),
         ),
       ),
       body: ListView(
